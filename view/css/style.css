@@ -1,0 +1,40 @@
+/* Resets */
+
+body, p, ul {
+	margin: unset;
+	padding: unset;
+}
+
+li {
+	list-style-type: none;
+}
+
+h1, h2, h3 {
+	margin: unset;
+	font-size: unset;
+	font-weight: unset;
+}
+
+img {
+    vertical-align: top;
+	max-width: 100%;
+    height: auto;
+}
+
+hr {
+    all: unset;
+} 
+
+button {
+	all: unset;
+    cursor: pointer;
+}
+
+textarea {
+	all: unset;
+	display: block;
+	inline-size: 100%;
+	line-height: 1.2;
+	padding: 12px;
+	box-sizing: border-box;
+}
