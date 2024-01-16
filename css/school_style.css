@@ -15,10 +15,21 @@ h1, h2, h3 {
 	font-weight: unset;
 }
 
+strong {
+    font-weight: unset;
+    font-size: unset;
+}
+
 img {
     vertical-align: top;
 	max-width: 100%;
     height: auto;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 hr {
@@ -53,4 +64,183 @@ button {
 .l_wrapper {
     width: 1280px;
     margin: 0 auto;
+}
+
+.l_row {
+	display: grid; 
+	grid-template-columns: repeat( 12, 1fr ); 
+	gap: 24px;
+}
+
+.l_col_12_12 { grid-column: auto / span 12; }
+.l_col_11_12 { grid-column: auto / span 11; }
+.l_col_10_12 { grid-column: auto / span 10; }
+.l_col_9_12  { grid-column: auto / span 9; }
+.l_col_8_12  { grid-column: auto / span 8; }
+.l_col_7_12  { grid-column: auto / span 7; }
+.l_col_6_12  { grid-column: auto / span 6; }
+.l_col_5_12  { grid-column: auto / span 5; }
+.l_col_4_12  { grid-column: auto / span 4; }
+.l_col_3_12  { grid-column: auto / span 3; }
+.l_col_2_12  { grid-column: auto / span 2; }
+.l_col_1_12  { grid-column: auto / span 1; }
+
+
+
+/* Components */
+
+
+/* header */
+.header {
+    background-image: url(/images/school_img/likelion_kdt_banner_img_w1920.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:400px;
+    color: var(--color-black);
+}
+
+.header-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.header-point-text {
+    color: var(--color-primary);
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.header-point-text.type_point_small {
+    font-size: 1.25rem;
+}
+
+.header-sub-text {
+    padding-top: 2rem;
+    font-weight: 500;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* contents  */
+
+.contents-item {
+    margin:4rem 0 ;
+}
+
+.contents-header {
+    margin-bottom: 2.2rem;
+    color: var(--color-black);
+}
+
+.contents-title {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.type_tit_small {
+    font-size: 1.5rem;
+}
+
+.content-sub-title {
+    color: var(--color-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.content-sub-title.type_tit_blue {
+    color: #072c56;
+}
+
+.card-cover {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-top: 16px;
+}
+
+.card-tag {
+    padding:4px 8px ;
+    border: 1px solid #3f3f46;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.card-tag.type_blue {
+    color: var(--color-blue);
+    border-color: var(--color-blue);
+}
+.card-tag.type_green {
+    color: var(--color-green);
+    border-color: var(--color-green);
+}
+
+.card-title {
+    color: var(--color-black);
+}
+
+.card-title > h3{
+    font-size: 1.24rem;
+    font-weight: 500;    
+}
+
+.card-title > p{
+    margin-top: 8px;
+    color: var(--color-black);
+    font-size: 1.105rem;
+    font-weight: 400;
+}
+
+.card-date {
+    font-size: 1rem;
+    color: var(--color-gray-30);
+}
+
+.contents-bnner {
+    background-color: #f0f4fa;
+}
+
+.banner-item {
+    background-image: url(/images/school_img/사전알림.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 206px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.banner-more {
+    font-size: 0.875rem;
+    color: var(--color-gray-50);
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.banner-more::after {
+    content: " ";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(/images/school_img/next-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
 }
