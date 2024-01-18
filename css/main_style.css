@@ -49,6 +49,7 @@ button {
   --color-gray-30: #a3a3a3;
   --color-gray-50: #737373;
 
+  --color-black-light: #262626;
   --color-black: #222222;
   --color-white: #fff;
 }
@@ -66,12 +67,60 @@ button {
 }
 
 /* Components */
+
 .header {
-  width: 1280px;
+  width: 1920px;
   height: 400px;
   /* width: 100%; */
 }
 
 .header-cover {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+.main {
+  box-shadow: inset 0 0 20px red;
+  margin-top: 80px;
+}
+
+.subtitle {
+  box-shadow: inset 0 0 20px blue;
+  width: 100%;
+}
+
+.subtitle-title {
+  font-size: 16px;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtitle-contents {
+  display: flex;
+}
+
+.subtitle-contents h2 {
+  font-size: 26px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: var(--color-black-light);
+}
+
+.subtitle-contents button {
+  margin-left: auto;
+}
+
+.subtitle-contents span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-right: 4px;
+}
+
+.subtitle-contents img {
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
 }
